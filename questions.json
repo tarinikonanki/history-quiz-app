@@ -1,52 +1,62 @@
 [
   {
-    "question": "Which document declared the thirteen American colonies independent from Britain?",
-    "choices": ["The Constitution", "The Declaration of Independence", "The Mayflower Compact", "The Articles of Confederation"],
-    "answer": "The Declaration of Independence"
+    "question": "In which city was the Constitutional Convention of 1787 held?",
+    "choices": ["New York City", "Boston", "Philadelphia", "Richmond"],
+    "answer": "Philadelphia"
   },
   {
-    "question": "Who was the first President of the United States?",
-    "choices": ["John Adams", "Thomas Jefferson", "Benjamin Franklin", "George Washington"],
-    "answer": "George Washington"
+    "question": "Who commissioned the Lewis and Clark Expedition?",
+    "choices": ["John Adams", "George Washington", "James Madison", "Thomas Jefferson"],
+    "answer": "Thomas Jefferson"
   },
   {
-    "question": "In what year did the Civil War end?",
-    "choices": ["1861", "1863", "1865", "1870"],
-    "answer": "1865"
+    "question": "What did the Monroe Doctrine of 1823 primarily declare?",
+    "choices": [
+      "The United States would annex Canada",
+      "European nations should not further colonize or interfere in the Americas",
+      "The United States would support European colonial expansion",
+      "The United States would withdraw from all foreign treaties"
+    ],
+    "answer": "European nations should not further colonize or interfere in the Americas"
   },
   {
-    "question": "What was the name of the 1803 land purchase that doubled the size of the United States?",
-    "choices": ["Gadsden Purchase", "Alaska Purchase", "Louisiana Purchase", "Mexican Cession"],
-    "answer": "Louisiana Purchase"
+    "question": "What issue did the Missouri Compromise of 1820 primarily address?",
+    "choices": [
+      "Tariffs on British goods",
+      "The boundary with Canada",
+      "The expansion of slavery into new territories",
+      "Native American land rights"
+    ],
+    "answer": "The expansion of slavery into new territories"
   },
   {
-    "question": "Which amendment to the Constitution abolished slavery?",
-    "choices": ["13th Amendment", "14th Amendment", "15th Amendment", "19th Amendment"],
-    "answer": "13th Amendment"
+    "question": "Which constitutional amendment granted citizenship to formerly enslaved people after the Civil War?",
+    "choices": ["13th Amendment", "14th Amendment", "15th Amendment", "16th Amendment"],
+    "answer": "14th Amendment"
   },
   {
-    "question": "What event triggered the United States' entry into World War II?",
-    "choices": ["Sinking of the Lusitania", "Invasion of Poland", "Attack on Pearl Harbor", "Fall of France"],
-    "answer": "Attack on Pearl Harbor"
+    "question": "In what year was the Spanish-American War fought?",
+    "choices": ["1885", "1890", "1898", "1905"],
+    "answer": "1898"
   },
   {
-    "question": "Who delivered the 'I Have a Dream' speech during the 1963 March on Washington?",
-    "choices": ["Malcolm X", "Thurgood Marshall", "John Lewis", "Martin Luther King Jr."],
-    "answer": "Martin Luther King Jr."
+    "question": "Which amendment to the U.S. Constitution granted women the right to vote?",
+    "choices": ["15th Amendment", "17th Amendment", "18th Amendment", "19th Amendment"],
+    "answer": "19th Amendment"
   },
   {
-    "question": "Which president issued the Emancipation Proclamation?",
-    "choices": ["Ulysses S. Grant", "Abraham Lincoln", "Andrew Johnson", "James Buchanan"],
-    "answer": "Abraham Lincoln"
+    "question": "Which president introduced the New Deal in response to the Great Depression?",
+    "choices": ["Herbert Hoover", "Harry S. Truman", "Franklin D. Roosevelt", "Woodrow Wilson"],
+    "answer": "Franklin D. Roosevelt"
   },
   {
-    "question": "What was the primary cause of the stock market crash of 1929?",
-    "choices": ["Overproduction and speculation", "A foreign attack on Wall Street", "Federal Reserve raising interest rates", "A drought destroying the economy"],
-    "answer": "Overproduction and speculation"
+    "question": "The Korean War is commonly referred to as what?",
+    "choices": ["The Forgotten War", "The Silent War", "The Cold Conflict", "The Pacific War"],
+    "answer": "The Forgotten War"
   },
   {
-    "question": "The American Revolution was primarily fought against which country?",
-    "choices": ["France", "Spain", "Britain", "The Netherlands"],
-    "answer": "Britain"
+    "question": "Which U.S. president managed the Cuban Missile Crisis in 1962?",
+    "choices": ["Dwight D. Eisenhower", "Lyndon B. Johnson", "Richard Nixon", "John F. Kennedy"],
+    "answer": "John F. Kennedy"
   }
 ]
