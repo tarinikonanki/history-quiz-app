@@ -42,3 +42,12 @@
 - Verification: I ran the app, checking if the next button showed up, was a different color than the submit button, and took the user to the next page.
 - One thing I learned: I learned how to look at what Claude offered me and decide on the go how I wanted to change my app.
 
+
+# AI Workflow
+
+For planning, I used Claude as it helped come up with ideas that I typically wouldn't think of right off the bat and expand on the ideas I came up with so I could create a more cohesive and fully-formed plan. I then used Claude Code to execute this plan by putting it in plan mode and then giving it a brief for each feature. I was then able to change it based on what I wanted to implement differently and then let Claude Code implement these ideas. For polishing, I used Copilot to change variable names and overall make the code more readable. For reviewing, I used Claude to make sure everything was cohesive, and the plan was good/made sense.
+
+For polishing, Copilot definitely outperformed other AI tools in making small fixes and making the code more readable. It was generally faster in this and more suited to this task compared to other AI tools.
+
+Initially, I actually tried using Claude to make the code readable in the instructions itself, but I switched to Copilot as I realized it would work better after finishing the rest of the app.
+
