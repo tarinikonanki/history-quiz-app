@@ -51,3 +51,14 @@ For polishing, Copilot definitely outperformed other AI tools in making small fi
 
 Initially, I actually tried using Claude to make the code readable in the instructions itself, but I switched to Copilot as I realized it would work better after finishing the rest of the app.
 
+
+# Reflection
+
+The agentic workflow helped build the actual code based off the instructions I gave it while making it look complete and visually appealing. This would not be possible for me to do in just 4 hours as I would take much longer to create the frontend and make it look nice, especially as I don't have much experience with this.
+
+Sometimes, I would have to step in and override Claude when I gave it a brief and asked it for a plan. It would sometimes present ideas or features that didn't align with what I wanted or weren't specific enough, so I would add extra prompting and information to achieve what I wanted my app to be like. For instance, Claude wanted to make the submit button only visible after a person clicks an answer choice, but I thought it would make more sense and personally be more useful to me if the submit button was always present so I knew I could change my answer before I ultimately submitted. In cases like this, I understand my needs better than Claude does so I need to prompt it further to meet it.
+
+In general, the project made me make more decisions especially as I had to override Claude a lot to make the app fit my specifications. I also got more experience in deciding functionalities for apps and making it more user-friendly as I had to figure out which specific features to create, how to arrange/style them, and what would be the most clear for the user. Additionally, the project made me see which gaps in knowledge I still had to overcome, such as my knowledge of testing. I could do simple tests, but with some of the more complicated features I have, I didn't know how to create tests for them, so that is still something I have to work on. I also still have to work on making my plans more specific.
+
+I will bring this workflow into my internship by asking my manager their expectations for me in regards to AI use and then utilizing what I've learned to fit those expectations. For instance, if permitted, I will be able to ship code faster with Claude depending on what type of project it is. My goal on Day 1 is to outline expectations and find out how I may apply what I learn.
+
