@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which document declared the thirteen American colonies independent from Britain?",
+    "choices": ["The Constitution", "The Declaration of Independence", "The Mayflower Compact", "The Articles of Confederation"],
+    "answer": "The Declaration of Independence"
+  },
+  {
+    "question": "Who was the first President of the United States?",
+    "choices": ["John Adams", "Thomas Jefferson", "Benjamin Franklin", "George Washington"],
+    "answer": "George Washington"
+  },
+  {
+    "question": "In what year did the Civil War end?",
+    "choices": ["1861", "1863", "1865", "1870"],
+    "answer": "1865"
+  },
+  {
+    "question": "What was the name of the 1803 land purchase that doubled the size of the United States?",
+    "choices": ["Gadsden Purchase", "Alaska Purchase", "Louisiana Purchase", "Mexican Cession"],
+    "answer": "Louisiana Purchase"
+  },
+  {
+    "question": "Which amendment to the Constitution abolished slavery?",
+    "choices": ["13th Amendment", "14th Amendment", "15th Amendment", "19th Amendment"],
+    "answer": "13th Amendment"
+  },
+  {
+    "question": "What event triggered the United States' entry into World War II?",
+    "choices": ["Sinking of the Lusitania", "Invasion of Poland", "Attack on Pearl Harbor", "Fall of France"],
+    "answer": "Attack on Pearl Harbor"
+  },
+  {
+    "question": "Who delivered the 'I Have a Dream' speech during the 1963 March on Washington?",
+    "choices": ["Malcolm X", "Thurgood Marshall", "John Lewis", "Martin Luther King Jr."],
+    "answer": "Martin Luther King Jr."
+  },
+  {
+    "question": "Which president issued the Emancipation Proclamation?",
+    "choices": ["Ulysses S. Grant", "Abraham Lincoln", "Andrew Johnson", "James Buchanan"],
+    "answer": "Abraham Lincoln"
+  },
+  {
+    "question": "What was the primary cause of the stock market crash of 1929?",
+    "choices": ["Overproduction and speculation", "A foreign attack on Wall Street", "Federal Reserve raising interest rates", "A drought destroying the economy"],
+    "answer": "Overproduction and speculation"
+  },
+  {
+    "question": "The American Revolution was primarily fought against which country?",
+    "choices": ["France", "Spain", "Britain", "The Netherlands"],
+    "answer": "Britain"
+  }
+]

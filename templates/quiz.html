@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question {{ current }} of {{ total }}</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 60px auto; }
+    .progress { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.3rem; margin-bottom: 1.5rem; }
+    .choices { list-style: none; padding: 0; }
+    .choices li { margin-bottom: 0.75rem; }
+    .choices label { display: block; padding: 10px 14px; border: 1px solid #ccc;
+                     border-radius: 6px; cursor: pointer; }
+    .choices label:hover { background: #f0f4ff; border-color: #2a6de6; }
+    input[type="radio"] { margin-right: 10px; }
+    button { margin-top: 1.5rem; background: #2a6de6; color: white; border: none;
+             padding: 10px 24px; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #1a55c0; }
+  </style>
+</head>
+<body>
+  <p class="progress">Question {{ current }} of {{ total }}</p>
+  <h2>{{ question.question }}</h2>
+  <form method="POST">
+    <ul class="choices">
+      {% for choice in question.choices %}
+      <li>
+        <label>
+          <input type="radio" name="choice" value="{{ choice }}" required>
+          {{ choice }}
+        </label>
+      </li>
+      {% endfor %}
+    </ul>
+    <button type="submit">Submit Answer</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Answer Feedback</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 60px auto; text-align: center; }
+    .result { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; }
+    .correct { color: #1a8a3a; }
+    .incorrect { color: #c0392b; }
+    .detail { color: #444; margin-bottom: 2rem; font-size: 1rem; }
+    a.btn { background: #2a6de6; color: white; padding: 10px 24px; border-radius: 6px;
+            text-decoration: none; font-size: 1rem; }
+    a.btn:hover { background: #1a55c0; }
+  </style>
+</head>
+<body>
+  {% if is_correct %}
+    <p class="result correct">Correct!</p>
+  {% else %}
+    <p class="result incorrect">Incorrect</p>
+    <p class="detail">The correct answer was: <strong>{{ question.answer }}</strong></p>
+    <p class="detail">You chose: {{ selected }}</p>
+  {% endif %}
+
+  {% if next_index >= total %}
+    <a class="btn" href="{{ url_for('results') }}">See Results</a>
+  {% else %}
+    <a class="btn" href="{{ url_for('quiz') }}">Next Question</a>
+  {% endif %}
+</body>
+</html>
