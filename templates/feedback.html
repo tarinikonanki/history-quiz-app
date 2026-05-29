@@ -2,31 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Answer Feedback</title>
   <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 60px auto; text-align: center; }
-    .result { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; }
-    .correct { color: #1a8a3a; }
-    .incorrect { color: #c0392b; }
-    .detail { color: #444; margin-bottom: 2rem; font-size: 1rem; }
-    a.btn { background: #2a6de6; color: white; padding: 10px 24px; border-radius: 6px;
-            text-decoration: none; font-size: 1rem; }
-    a.btn:hover { background: #1a55c0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(160deg, #0d2b6e 0%, #1a4fa8 50%, #3a80d2 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    header h1 {
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      width: 100%;
+      max-width: 720px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      padding: 36px 40px 32px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      color: #0d2b6e;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .choices-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .choice {
+      padding: 14px 16px;
+      border: 2px solid #c5d8f8;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      color: #1a3a6e;
+      background: #f4f8ff;
+      line-height: 1.4;
+    }
+
+    .choice.correct {
+      background: #1a8a3a;
+      border-color: #1a8a3a;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .choice.incorrect {
+      background: #c0392b;
+      border-color: #c0392b;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .result-label {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .result-label.correct { color: #1a8a3a; }
+    .result-label.incorrect { color: #c0392b; }
+
+    .submit-row {
+      text-align: center;
+    }
+
+    a.btn {
+      display: inline-block;
+      background: #1a4fa8;
+      color: #ffffff;
+      border: none;
+      padding: 13px 44px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    a.btn:hover {
+      background: #0d2b6e;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
-  {% if is_correct %}
-    <p class="result correct">Correct!</p>
-  {% else %}
-    <p class="result incorrect">Incorrect</p>
-    <p class="detail">The correct answer was: <strong>{{ question.answer }}</strong></p>
-    <p class="detail">You chose: {{ selected }}</p>
-  {% endif %}
+  <header>
+    <h1>American History Quiz</h1>
+  </header>
 
-  {% if next_index >= total %}
-    <a class="btn" href="{{ url_for('results') }}">See Results</a>
-  {% else %}
-    <a class="btn" href="{{ url_for('quiz') }}">Next Question</a>
-  {% endif %}
+  <main>
+    <div class="card">
+      <h2>{{ question.question }}</h2>
+      <div class="choices-grid">
+        {% for choice in question.choices %}
+          {% if choice == selected and is_correct %}
+            <div class="choice correct">{{ choice }}</div>
+          {% elif choice == selected and not is_correct %}
+            <div class="choice incorrect">{{ choice }}</div>
+          {% elif choice == question.answer and not is_correct %}
+            <div class="choice correct">{{ choice }}</div>
+          {% else %}
+            <div class="choice">{{ choice }}</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if is_correct %}
+        <p class="result-label correct">Correct!</p>
+      {% else %}
+        <p class="result-label incorrect">Incorrect</p>
+      {% endif %}
+
+      <div class="submit-row">
+        {% if next_index >= total %}
+          <a class="btn" href="{{ url_for('results') }}">See Results</a>
+        {% else %}
+          <a class="btn" href="{{ url_for('quiz') }}">Next Question</a>
+        {% endif %}
+      </div>
+    </div>
+  </main>
 </body>
 </html>
